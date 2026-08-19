@@ -45,3 +45,5 @@ class BoxView(CardListView):
             else:
                 card.move(False)
         return redirect(request.META.get("HTTP_REFERER"))
+
+
