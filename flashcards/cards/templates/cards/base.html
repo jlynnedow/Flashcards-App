@@ -10,12 +10,12 @@
     /* Custom CSS */
 
     :root {
-        --accent: #6e48ad;
-        --accent-bg: white;
-        --bg: #fff;
-        --text: #212121;
-        --text-light: #585858;
-        --border: #d8dae1;
+        --accent: #2f3e46;
+        --accent-bg: #a3b18a;
+        --bg: #cad2c5;
+        --text: #2f3e46;
+        --text-light: #354f52;
+        --border: #2f3e46;
         --code: #d81b60;
         --preformatted: #444;
     }
@@ -43,7 +43,7 @@
 
     button,
     a[role="button"] {
-        color: rgb(198, 85, 15);
+        color: #3a5a40;
         text-decoration: none;
     }
 
@@ -54,15 +54,15 @@
 
 <body>
     <header>
-        <h1>Flashcards App</h1>
+        <h1>(Not) Quizlet</h1>
         {% include "cards/navigation.html" %}
         <text>
-            Welcome to my flashcard app! This flashcard maker was made specifically with langauge learners in mind, blending my love of computer science with my love of learning languages. This app uses a spaced repetition system to make sure you memorize everything! Once all of the cards are in box 5, you'll be a pro!
+            This study tool is free and works very differently from quizlet learn
         <text>
     </header>
     <main>
         {% block content %}
-            <h2>Welcome to your Flashcards app!</h2>
+            <h2>(Not) Quizlet</h2>
         {% endblock content %}
     </main>
 </body>

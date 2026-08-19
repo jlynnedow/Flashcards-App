@@ -39,5 +39,11 @@ class BoxView(CardListView):
         form = self.form_class(request.POST)
         if form.is_valid():
             card = get_object_or_404(Card, id=form.cleaned_data["card_id"])
-            card.move(form.cleaned_data["solved"])
+            user_answer = form.cleaned_data["user_answer"]
+            if user_answer == card.answer:
+                card.move(True)
+            else:
+                card.move(False)
         return redirect(request.META.get("HTTP_REFERER"))
+
+

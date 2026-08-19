@@ -9,7 +9,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Save Card">
+        <input type="submit" value="Save Card" color="#a3b18a">
     </form>
     <a href="{% url 'card-list' %}">
         Cancel
